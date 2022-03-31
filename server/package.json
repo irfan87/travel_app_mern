@@ -1,0 +1,15 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Ahmad Irfan Mohammad Shukri",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9",
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  }
+}
