@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 
 const pinRoute = require("./routes/pinsRoute");
+const userRoute = require("./routes/usersRoute");
 
 const app = express();
 
@@ -21,6 +22,7 @@ mongoose
 	.catch((err) => console.log(err));
 
 app.use("/api/pins", pinRoute);
+app.use("/api/users", userRoute);
 
 app.listen(PORT, (req, res) => {
 	console.log(`Backend server is running on port ${PORT}`);
